@@ -1,0 +1,166 @@
+/* Підключення Google Fonts */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+p, ul {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+header {
+    background-color: #3E4E50;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 2.8rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: white;
+    color: #3E4E50;
+    border-bottom: 2px solid #3E4E50;
+    border-radius: 5px;
+}
+
+.banner {
+    background: url('https://www.example.com/banner-image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 3rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #3E4E50;
+    color: white;
+    margin-top: 2rem;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+footer:hover {
+    background-color: #2f3f40;
+}
+
+/* Кнопки */
+button, input[type="submit"] {
+    background-color: #3E4E50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #2f3f40;
+    transform: scale(1.05);
+}
+
+button:focus, input[type="submit"]:focus {
+    outline: 2px solid #2E7D32;
+}
+
+/* Поля вводу */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, textarea:hover {
+    border-color: #3E4E50;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #3E4E50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(62, 78, 80, 0.5);
+}
